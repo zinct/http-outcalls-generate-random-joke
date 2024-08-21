@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "indra-challange-2-backend": {
+      "main": "src/indra-challange-2-backend/main.mo",
+      "type": "motoko"
+    },
+    "indra-challange-2-frontend": {
+      "dependencies": [
+        "indra-challange-2-backend"
+      ],
+      "source": [
+        "src/indra-challange-2-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "indra-challange-2-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
